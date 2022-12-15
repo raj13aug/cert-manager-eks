@@ -27,6 +27,7 @@ spec:
     targetPort: 8080
   selector:
     env: simple-app
+
 ---
 apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
@@ -43,6 +44,7 @@ spec:
    - http01:
        ingress:
          class:  nginx
+
 ---
 apiVersion: cert-manager.io/v1
 kind: Certificate
@@ -57,6 +59,7 @@ spec:
   commonName: demo.robofarming.link #### <<<< Add your own domain name
   dnsNames:
   - demo.robofarming.link #### <<<< Add your own domain name
+  
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
