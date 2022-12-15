@@ -1,3 +1,5 @@
+# https://cert-manager.io/docs/
+
 resource "helm_release" "cert_manager" {
   name              = "cert-manager"
   repository        = "https://charts.jetstack.io"
@@ -6,7 +8,7 @@ resource "helm_release" "cert_manager" {
   create_namespace  = "true"
   force_update      = "true"
   dependency_update = "true"
-  version           = "v1.4.0"
+  version           = "v1.10.1"
 
   set {
     name  = "webhook.securePort"
