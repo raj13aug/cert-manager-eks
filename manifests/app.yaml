@@ -21,7 +21,9 @@ metadata:
   name: svc-simple-app
   namespace: default
 spec:
+  type: ClusterIP
   ports:
-    port: 8080
+  - port: 8080
+    targetPort: 8080
   selector:
     env: simple-app
