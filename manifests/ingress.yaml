@@ -10,10 +10,10 @@ metadata:
 spec:
   tls:
     - hosts:
-      - demo.robofarming.link #### <<<< Add your own domain name
-      secretName: demo.robofarming.link
+      - robofarming.link #### <<<< Add your own domain name
+      secretName: robofarming.link
   rules:
-  - host: demo.robofarming.link #### <<<< Add your own domain name
+  - host: robofarming.link #### <<<< Add your own domain name
     http:
       paths:
       - path: /

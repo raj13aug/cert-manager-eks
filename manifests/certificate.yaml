@@ -7,7 +7,7 @@ metadata:
 spec:
  acme:
    server: https://acme-staging-v02.api.letsencrypt.org/directory    #### <<<< change for prod: https://acme-v02.api.letsencrypt.org/directory
-   email: nataraj.ramamoorthy13@gmail.com #### <<<< Your email
+   email: nataraj.ramamoorthy85@gmail.com #### <<<< Your email
    privateKeySecretRef:
      name: letsencrypt
    solvers:
